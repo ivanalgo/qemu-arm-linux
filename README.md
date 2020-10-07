@@ -26,7 +26,7 @@ git clone https://github.com/ivanalgo/qemu-arm-linux.git
 cd qemu-arm-linux
 
 ./build-docker-image.sh
-`
+```
 
 构建成功后，请使用docker images来检查是否生成 arm-kernel-3.16-qemu 镜像
 
@@ -36,7 +36,7 @@ cd qemu-arm-linux
 REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
 arm-kernel-3.16-qemu   latest              db5c6750bbe4        About an hour ago   2.29GB
 ubuntu                 14.04               df043b4f0cf1        2 weeks ago         197MB
-`
+```
 
 # 创建一个特权容器，运行qemu+arm
 
@@ -46,7 +46,7 @@ docker run -it --privileged  arm-kernel-3.16-qemu /bin/bash
 ```
 [root@iZuf6gi6u0x419pu22gquvZ ~]# docker run -it --privileged  arm-kernel-3.16-qemu /bin/bash
 root@bf121ecd02bd:/#
-`
+```
 
 # 在容器内创建一个ext3磁盘文件
 
@@ -251,7 +251,7 @@ Please press Enter to activate this console.
 / # ls
 bin         etc         linuxrc     proc        usr
 dev         lib         lost+found  sbin
-`
+```
 
 # 欢迎您的贡献
 可以直接提issue，也可以发起request，同时也要以发起RP。
