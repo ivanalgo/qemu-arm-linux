@@ -79,12 +79,12 @@ Allocating group tables: done
 Writing inode tables: done                            
 Creating journal (4096 blocks): done
 Writing superblocks and filesystem accounting information: done
-`
+```
 
 # 在容器内运行qemu+arm kernel
 
 在上面的容器里运行：/opt/start_qemu.sh 运行启动一个qemu+arm系统，直接进入命令对arm linux进行命令操作，过程如下：
-`
+```
 root@bf121ecd02bd:/# /opt/start_qemu.sh 
 Booting Linux on physical CPU 0x0
 Initializing cgroup subsys cpuset
